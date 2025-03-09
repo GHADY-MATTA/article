@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="signup-section container">
+        <h1 class="h-tag">Sign Up</h1>
+        <h5 class="medium-text h-tag">Create a Free Account or <a class="a-tag medium-text" href="login.html">Log in</a></h5>
+
+        <div class="box">
+            <form id="signupForm">
+                <!-- Username Field -->
+                <label class="small-text label-tag" for="username">Username</label>
+                <input class="input-btn" type="text" id="username" name="username" placeholder="Enter your username"
+                    required><br>
+
+                <!-- Last Name Field --><br>
+                <label class="small-text label-tag" for="lastname">Last Name</label>
+                <input class="input-btn" type="text" id="lastname" name="lastname" placeholder="Enter your last name"
+                    required><br>
+
+                <!-- Email Field --><br>
+                <label class="small-text label-tag" for="email">Email</label>
+                <input class="input-btn" type="email" id="email" name="email" placeholder="yourname@example.com" required><br>
+
+                <!-- Password Field --><br>
+                <label class="small-text label-tag" for="password">Password </label>
+                <input class="input-btn" type="password" id="password" name="password"
+                    placeholder="At least 8 characters, 1 number, 1 uppercase, 1 special character" required>
+
+                <!-- Password Confirmation Field --> <br></br>
+                <label class="small-text label-tag" for="password_confirmation">Confirm Password </label>
+                <input class="input-btn" type="password" id="password_confirmation" name="password_confirmation"
+                    placeholder="Confirm your password" required><br>
+
+                <!-- Sign Up Button -->
+                <div class="sign-up"><br>
+                    <input class="back-btn" type="submit" value="Sign Up"><br>
+                </div>
+            </form> <br>
+
+            <!-- Back Button -->
+            <div class="backbtn1">
+                <button class="back-btn " onclick="window.history.back()">Back</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="/article/client/js/signup.js"></script>
+</body>
+
+</html>

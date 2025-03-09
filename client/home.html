@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/article/client/style.css">
+    
+   </head>
+
+
+<body>
+    <div class="homestyle ">
+        <h2 class="h-tag big-text">Welcome</h2>
+        <div>
+            <a class="a-tag signUp-btn" href="/article/client/addqa.html">+Add(Q&A)</a><br>
+        </div><br>
+        <p class="p-tag small-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint dolorem temporibus sequi ut voluptatum accusantium ratione obcaecati aut fugit. Error excepturi incidunt, voluptates porro quasi animi architecto atque nemo hic!</p>
+
+        <div  class="search-q&a box">
+            <div class="search-container">
+                <form id="searchForm"><br>
+                    <input class="input-btn" type="text" id="searchKeyword" name="keyword" placeholder="Search by name..." required><br>
+                    <br>
+                    <button class="back-btn" type="submit">Search</button><br>
+                </form>
+            </div><br>
+            <div class="dipslay-q&q" id="searchResults"></div> <br>
+        </div>
+         <br>
+
+        <div class="display-qa" >
+
+<div class="box" id="userContainer">
+    <!-- User data will be dynamically inserted here -->
+</div> <br>
+
+        </div> <br>
+
+        <a href="/article/server/api1/logout.php" class="logout-btn a-tag">Logout</a>
+    </div>
+    </div>
+<script src="/article/client/js/usersearch.js"></script>
+
+    <script src="/article/client/js/displayqa.js"></script>
+    <script src="/article/client/js/hide(display).js"></script>
+
+</body>
+
+</html>
